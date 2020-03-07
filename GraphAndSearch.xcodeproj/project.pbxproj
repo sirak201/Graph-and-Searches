@@ -11,6 +11,7 @@
 		CE3025CD24131D1A00C09FBE /* AdjacencyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3025CC24131D1A00C09FBE /* AdjacencyList.swift */; };
 		CE3025CF24134C7400C09FBE /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3025CE24134C7400C09FBE /* Graph.swift */; };
 		CE3025D124134C9E00C09FBE /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3025D024134C9E00C09FBE /* Edge.swift */; };
+		CE3025D32413537200C09FBE /* AdjacencyMatrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3025D22413537200C09FBE /* AdjacencyMatrix.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,7 @@
 		CE3025CC24131D1A00C09FBE /* AdjacencyList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdjacencyList.swift; sourceTree = "<group>"; };
 		CE3025CE24134C7400C09FBE /* Graph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
 		CE3025D024134C9E00C09FBE /* Edge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Edge.swift; sourceTree = "<group>"; };
+		CE3025D22413537200C09FBE /* AdjacencyMatrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdjacencyMatrix.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 			children = (
 				CE3025C524130A2000C09FBE /* main.swift */,
 				CE3025CC24131D1A00C09FBE /* AdjacencyList.swift */,
+				CE3025D22413537200C09FBE /* AdjacencyMatrix.swift */,
 				CE3025CE24134C7400C09FBE /* Graph.swift */,
 				CE3025D024134C9E00C09FBE /* Edge.swift */,
 			);
@@ -130,6 +133,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE3025CF24134C7400C09FBE /* Graph.swift in Sources */,
+				CE3025D32413537200C09FBE /* AdjacencyMatrix.swift in Sources */,
 				CE3025CD24131D1A00C09FBE /* AdjacencyList.swift in Sources */,
 				CE3025D124134C9E00C09FBE /* Edge.swift in Sources */,
 				CE3025C624130A2000C09FBE /* main.swift in Sources */,

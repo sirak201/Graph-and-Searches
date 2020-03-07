@@ -10,7 +10,7 @@ import Foundation
 
 class AdjacencyList<T : Hashable> : Graph {
     
-    public var adjacencies : [Vertex<T> : [Edge<T>]] = [:]
+    private var adjacencies : [Vertex<T> : [Edge<T>]] = [:]
 
 
     
@@ -47,7 +47,7 @@ class AdjacencyList<T : Hashable> : Graph {
     func weight(from source: Vertex<T>, to destonation: Vertex<T>) -> Double? {
      
         return edges(from: source)
-            .first { $0.destination == destinatio }?
+            .first { $0.destination == destonation }?
             .weight
     }
     
