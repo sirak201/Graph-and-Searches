@@ -12,6 +12,9 @@
 		CE3025CF24134C7400C09FBE /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3025CE24134C7400C09FBE /* Graph.swift */; };
 		CE3025D124134C9E00C09FBE /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3025D024134C9E00C09FBE /* Edge.swift */; };
 		CE3025D32413537200C09FBE /* AdjacencyMatrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3025D22413537200C09FBE /* AdjacencyMatrix.swift */; };
+		CE3025D52416CB6E00C09FBE /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3025D42416CB6E00C09FBE /* Stack.swift */; };
+		CE3025D72416CE6C00C09FBE /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3025D62416CE6C00C09FBE /* Queue.swift */; };
+		CE3025D92416DCA200C09FBE /* BreadthFirstSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3025D82416DCA200C09FBE /* BreadthFirstSearch.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,6 +36,9 @@
 		CE3025CE24134C7400C09FBE /* Graph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
 		CE3025D024134C9E00C09FBE /* Edge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Edge.swift; sourceTree = "<group>"; };
 		CE3025D22413537200C09FBE /* AdjacencyMatrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdjacencyMatrix.swift; sourceTree = "<group>"; };
+		CE3025D42416CB6E00C09FBE /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
+		CE3025D62416CE6C00C09FBE /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
+		CE3025D82416DCA200C09FBE /* BreadthFirstSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreadthFirstSearch.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +73,9 @@
 			children = (
 				CE3025C524130A2000C09FBE /* main.swift */,
 				CE3025CC24131D1A00C09FBE /* AdjacencyList.swift */,
+				CE3025D42416CB6E00C09FBE /* Stack.swift */,
+				CE3025D62416CE6C00C09FBE /* Queue.swift */,
+				CE3025D82416DCA200C09FBE /* BreadthFirstSearch.swift */,
 				CE3025D22413537200C09FBE /* AdjacencyMatrix.swift */,
 				CE3025CE24134C7400C09FBE /* Graph.swift */,
 				CE3025D024134C9E00C09FBE /* Edge.swift */,
@@ -133,9 +142,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE3025CF24134C7400C09FBE /* Graph.swift in Sources */,
+				CE3025D72416CE6C00C09FBE /* Queue.swift in Sources */,
 				CE3025D32413537200C09FBE /* AdjacencyMatrix.swift in Sources */,
+				CE3025D92416DCA200C09FBE /* BreadthFirstSearch.swift in Sources */,
 				CE3025CD24131D1A00C09FBE /* AdjacencyList.swift in Sources */,
 				CE3025D124134C9E00C09FBE /* Edge.swift in Sources */,
+				CE3025D52416CB6E00C09FBE /* Stack.swift in Sources */,
 				CE3025C624130A2000C09FBE /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

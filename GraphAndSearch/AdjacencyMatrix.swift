@@ -38,16 +38,20 @@ public class AdjacencyMatrix<T> : Graph{
     
     
     public func createVertex(data: T) -> Vertex<T> {
-        let vertex = Vertex(index: vertices.count, data: data)
-        vertices.append(vertex)
 
+        let newVertex = Vertex(index: vertices.count, data: data)
+        vertices.append(newVertex)
+        
         for i in 0..<weights.count {
             weights[i].append(nil)
         }
+        
+        let newRow = Array<Double?>(repeating: nil, count: vertices.count)
+        
+        weights.append(newRow)
+        
 
-        let row = [Double?](repeating: nil, count: vertices.count)
-        weights.append(row)
-        return vertex
+        return newVertex
     }
     
     public func weight(from source: Vertex<T>, to destonation: Vertex<T>) -> Double? {

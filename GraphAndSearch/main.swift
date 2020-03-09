@@ -58,4 +58,58 @@ graph.add(.undirected, from: washingtonDC, to: seattle, weight: 277)
 graph.add(.undirected, from: sanFrancisco, to: seattle, weight: 218)
 graph.add(.undirected, from: austinTexas, to: sanFrancisco, weight: 297)
 
-print(graph)
+//print(graph)
+
+
+let challageGraph = AdjacencyList<String>()
+let a = challageGraph.createVertex(data: "A")
+let b = challageGraph.createVertex(data: "B")
+let c = challageGraph.createVertex(data: "C")
+let d = challageGraph.createVertex(data: "D")
+let e = challageGraph.createVertex(data: "E")
+challageGraph.add(.durected, from: a, to: c, weight: nil)
+challageGraph.add(.durected, from: a, to: b, weight: nil)
+challageGraph.add(.durected, from: a, to: e, weight: nil)
+challageGraph.add(.durected, from: a, to: d, weight: nil)
+challageGraph.add(.durected, from: b, to: d, weight: nil)
+challageGraph.add(.durected, from: b, to: c, weight: nil)
+challageGraph.add(.durected, from: c, to: e, weight: nil)
+challageGraph.add(.durected, from: d, to: e, weight: nil)
+
+
+
+func getPathCount(_ graph : AdjacencyList<String> ,  _ source : Vertex<String> , _ destination : Vertex<String> ) -> Int {
+    
+    let edges = graph.edges(from: source)
+    var holder = 0
+    
+    for i in edges {
+        if i.destination == destination {
+            holder += 1
+        } else {
+            holder += getPathCount(graph , i.destination, destination)
+        }
+    }
+
+    return holder
+}
+
+
+
+
+
+
+//print(getPathCount(challageGraph, a, e))
+
+var myset = Set<Vertex<String>>()
+let verticles = challageGraph.recuresiveBFS(from: a, enquied: &myset)
+
+
+verticles.forEach { vertex in
+    
+    print(vertex)
+    
+}
+
+
+
